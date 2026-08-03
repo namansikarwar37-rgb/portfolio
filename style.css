@@ -1,19 +1,30 @@
+:root{
+    --primary:#2563eb;
+    --secondary:#1e293b;
+    --light:#f8fafc;
+    --white:#ffffff;
+    --text:#334155;
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #f5f7fa;
-  color: #222;
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.7;
 }
 
-header {
-  padding: 20px 10%;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:var(--white);
+    box-shadow:var(--shadow);
+    padding:20px 10%;
 }
 
 nav {
@@ -28,10 +39,15 @@ nav ul {
   gap: 25px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
+nav a{
+    color:var(--secondary);
+    font-weight:600;
+    transition:.3s;
+}
+
+
+nav a:hover{
+    color:var(--primary);
 }
 
 .hero {
@@ -64,18 +80,18 @@ nav a {
   line-height: 1.8;
 }
 
-.btn {
-  display: inline-block;
-
-  padding: 12px 25px;
-
-  background: #0d6efd;
-
-  color: white;
-
-  text-decoration: none;
-
-  border-radius: 8px;
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:var(--primary);
+    color:white;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow);
 }
 
 .hero-image img{
@@ -83,7 +99,7 @@ nav a {
     height:350px;
     object-fit:cover;
     border-radius:50%;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    box-shadow:var(--shadow);
 }
 
 .about {
@@ -108,67 +124,77 @@ nav a {
 
 .skills,
 .education,
-.contact{
-    padding:80px 10%;
-    text-align:center;
+.contact {
+  padding: 80px 10%;
+  text-align: center;
 }
 
-.skills-container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:40px;
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .skill-card{
     background:white;
-    padding:25px;
-    width:180px;
-    border-radius:10px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-    transition:.3s;
+    padding:30px;
+    width:200px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    transition:.4s;
 }
 
 .skill-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 }
 
 .edu-card{
-    margin-top:30px;
     background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    max-width:650px;
+    margin:40px auto;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
 }
 
-.contact form{
-    max-width:500px;
-    margin:auto;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact input,
 .contact textarea{
-    padding:12px;
-    border:1px solid #ccc;
+    padding:14px;
+    border:1px solid #d1d5db;
     border-radius:8px;
+    font-size:16px;
 }
 
 .contact button{
-    padding:12px;
-    background:#0d6efd;
+    background:var(--primary);
     color:white;
+    padding:14px;
     border:none;
     border-radius:8px;
     cursor:pointer;
+    transition:.3s;
+}
+
+.contact button:hover{
+    background:#1d4ed8;
 }
 
 footer{
-    background:#111;
+    background:#111827;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:30px;
+}
+html{
+    scroll-behavior:smooth;
 }
