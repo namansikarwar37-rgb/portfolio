@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naman Singh Sikarwar | Portfolio</title>
+
+    <title>Naman Singh Sikarwar | Web Developer</title>
 
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -16,130 +18,318 @@
   </head>
 
   <body>
+    <!-- ================= NAVBAR ================= -->
+
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
+      <nav class="navbar">
+        <a href="#home" class="logo">Naman<span>.</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Hello, I'm <span>Naman Singh Sikarwar</span></h1>
+    <!-- ================= HOME ================= -->
 
-        <h3>Aspiring Web Developer</h3>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="intro">Hello, I'm</p>
 
-        <p>
-          Passionate about creating responsive and beautiful websites using
-          HTML, CSS and JavaScript.
+          <h1>Naman Singh Sikarwar</h1>
+
+          <h2>Aspiring Web Developer</h2>
+
+          <p class="hero-description">
+            I create modern, responsive and user-friendly websites using HTML,
+            CSS and JavaScript.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn"> View My Work </a>
+
+            <a href="#contact" class="btn secondary-btn"> Contact Me </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/profile.jpg" alt="Naman Singh Sikarwar" />
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+
+      <section id="about" class="section about">
+        <div class="section-heading">
+          <p>Get To Know Me</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a Computer Science and Engineering student with a strong
+              interest in web development and technology.
+            </p>
+
+            <p>
+              I enjoy building responsive websites and learning new technologies
+              through practical projects. I am continuously working on improving
+              my programming and problem-solving skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+
+      <section id="skills" class="section skills">
+        <div class="section-heading">
+          <p>What I Know</p>
+          <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">HTML</div>
+            <h3>HTML</h3>
+            <p>Semantic and structured web pages.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">CSS</div>
+            <h3>CSS</h3>
+            <p>Responsive layouts and modern styling.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Interactive and dynamic web experiences.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">C++</div>
+            <h3>C++</h3>
+            <p>Programming and problem solving.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">SQL</div>
+            <h3>SQL</h3>
+            <p>Working with relational databases.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">Git</div>
+            <h3>Git & GitHub</h3>
+            <p>Version control and source management.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EDUCATION ================= -->
+
+      <section id="education" class="section education">
+        <div class="section-heading">
+          <p>My Academic Journey</p>
+          <h2>Education</h2>
+        </div>
+
+        <div class="education-card">
+          <h3>B.Tech - Computer Science & Engineering</h3>
+
+          <p class="institution">ITM University, Gwalior</p>
+
+          <p>
+            Currently pursuing my Bachelor's degree in Computer Science and
+            Engineering.
+          </p>
+
+          <span class="education-date"> 2025 - Present </span>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+
+      <section id="projects" class="section projects">
+        <div class="section-heading">
+          <p>My Recent Work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-content">
+              <span class="project-number">01</span>
+
+              <h3>School Website Clone</h3>
+
+              <p>
+                A responsive school website clone developed using HTML and CSS
+                with a clean and modern user interface.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+
+              <a href="#" class="project-link"> View Project → </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <span class="project-number">02</span>
+
+              <h3>Personal Portfolio</h3>
+
+              <p>
+                A responsive developer portfolio showcasing my skills,
+                education, experience and projects.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a href="#" class="project-link"> View Project → </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <span class="project-number">03</span>
+
+              <h3>Todo Application</h3>
+
+              <p>
+                A simple JavaScript-based task management application with
+                interactive functionality.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a href="#" class="project-link"> View Project → </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE ================= -->
+
+      <section id="experience" class="section experience">
+        <div class="section-heading">
+          <p>My Professional Journey</p>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="experience-card">
+          <span class="experience-date"> 2026 </span>
+
+          <h3>Web Development Intern</h3>
+
+          <h4>Codomax Digital Solutions</h4>
+
+          <p>
+            Working on practical web development projects while improving skills
+            in HTML, CSS, JavaScript, Git, GitHub and responsive web design.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= RESUME ================= -->
+
+      <section class="resume-section">
+        <h2>Want to know more about me?</h2>
+
+        <p>Download my resume to learn more about my skills and projects.</p>
+
+        <a href="#" class="btn primary-btn"> Download Resume </a>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+
+      <section id="contact" class="section contact">
+        <div class="section-heading">
+          <p>Let's Connect</p>
+          <h2>Contact Me</h2>
+        </div>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" />
+
+            <small id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" />
+
+            <small id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+
+            <small id="messageError"></small>
+          </div>
+
+          <button type="submit" class="btn primary-btn">Send Message</button>
+
+          <p id="formMessage"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="footer-content">
+        <h2>Naman<span>.</span></h2>
+
+        <p>Aspiring Web Developer | CSE Student</p>
+
+        <div class="social-links">
+          <a href="https://github.com/namansikarwar37-rgb" target="_blank" rel="noopener noreferrer">
+    GitHub
+</a>
+          <a href="https://www.linkedin.com/in/naman-sikarwar-1a6823380/" target="_blank" rel="noopener noreferrer">
+    LinkedIn
+</a>
+
+        </div>
+
+        <p class="copyright">
+          © <span id="year"></span> Naman Singh Sikarwar. All Rights Reserved.
         </p>
-
-        <a href="#about" class="btn">Know More</a>
       </div>
+    </footer>
 
-      <div class="hero-image">
-        <img src="images/profile.jpg" alt="Profile" />
-      </div>
-    </section>
+    <!-- SCROLL TO TOP -->
 
-    <section id="about" class="about">
-      <h2>About Me</h2>
+    <button id="topBtn">↑</button>
 
-      <p>
-        I am a Computer Science student passionate about web development. I
-        enjoy creating responsive, user-friendly websites and continuously
-        improving my frontend development skills through practical projects.
-      </p>
-    </section>
-    <section id="skills" class="skills">
-      <h2>My Skills</h2>
-
-      <div class="skills-container">
-        <div class="skill-card">
-          <h3>HTML</h3>
-        </div>
-
-        <div class="skill-card">
-          <h3>CSS</h3>
-        </div>
-
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-        </div>
-
-        <div class="skill-card">
-          <h3>Git & GitHub</h3>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects">
-
-    <h2>My Projects</h2>
-
-    <div class="project-container">
-
-        <div class="project-card">
-            <h3>School Website Clone</h3>
-            <p>
-                A responsive school website built using HTML and CSS with a modern UI.
-            </p>
-
-            <a href="#" class="project-btn">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>
-                A responsive portfolio website showcasing my skills, education and projects.
-            </p>
-
-            <a href="#" class="project-btn">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Todo App</h3>
-            <p>
-                A JavaScript-based Todo application using Local Storage to save tasks.
-            </p>
-
-            <a href="#" class="project-btn">View Project</a>
-        </div>
-
-    </div>
-
-</section>
-    <section id="education" class="education">
-      <h2>Education</h2>
-
-      <div class="edu-card">
-        <h3>B.Tech - Computer Science & Engineering</h3>
-
-        <p>ITM University, Gwalior</p>
-
-        <p>2025 - Present</p>
-      </div>
-    </section>
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-
-      <form>
-        <input type="text" placeholder="Your Name" />
-
-        <input type="email" placeholder="Email" />
-
-        <textarea placeholder="Message"></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-    <footer><p>&copy; <span id="year"></span> Naman Singh Sikarwar | All Rights Reserved</p></footer>
     <script src="script.js"></script>
-    <button id="topBtn" title="Go to top">↑</button>
   </body>
 </html>
